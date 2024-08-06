@@ -84,6 +84,21 @@ header {
     
 }
 
+.Hero .column button {
+    flex: 0;
+    width: 100px;
+    background-color: #3882f6;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    touch-action: manipulation;
+    padding: 5px 10px;
+
+}
+
 .main-text {
     font-weight: 900;
     font-size: 48px;
@@ -98,6 +113,8 @@ header {
 .cheers-image img {
     width: 300px;
     height: auto;
+    border-radius: 10px;
+    
 }
 
 .Info {
@@ -105,34 +122,42 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .Info-header {
     font-size: 36px;
     font-weight: 900;
+    align-self: center;
 }
 
 .Info .panel {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 10px;
     padding: 20px;
 }
 
 .panel .image {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    align-content: center;
+    gap: 10px;
+    max-width: 150px;
+    }
 
 .panel .image img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 10%;
+}
+
+.panel .image div {
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .Quote {
@@ -150,12 +175,13 @@ header {
 }
 
 .Quote .Author {
-    font-size: 20px;
+    font-size: 14px;
     color: #1F2937;
+    padding-top: 10px;
 }
 
 .Author {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .Call-to-action {
